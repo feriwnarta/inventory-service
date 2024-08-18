@@ -19,7 +19,7 @@ public class StockRawController {
     private final StockRawService stockRawService;
 
     @PostMapping(
-            value = "stock/raws",
+            value = "stocks/raws",
             consumes = MediaType.APPLICATION_JSON_VALUE,
             produces = MediaType.APPLICATION_JSON_VALUE
     )

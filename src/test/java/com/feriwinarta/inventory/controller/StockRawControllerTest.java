@@ -53,7 +53,7 @@ public class StockRawControllerTest extends BaseTestContainerPostgres {
                 .request()
                 .body(mapper.writeValueAsString(request))
                 .contentType(ContentType.JSON)
-                .post("/library/stock/raws")
+                .post("/inventory/stocks/raws")
                 .then()
                 .statusCode(201)
                 .body("data.ingredientId", Matchers.equalTo("1"));
